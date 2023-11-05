@@ -1,0 +1,10 @@
+import {configureStore} from "@reduxjs/toolkit"
+
+import rootReducer from '../reducers';
+
+const configureStore = preloadedState => con(
+  rootReducer,
+  preloadedState,
+)
+
+export default configureStore
